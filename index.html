@@ -637,10 +637,10 @@
 
                 <div class="community-grid">
 
-                    <img src="assets/community-01.jpg" alt="">
-                    <img src="assets/community-02.jpg" alt="">
-                    <img src="assets/community-03.jpg" alt="">
-                    <img src="assets/community-04.jpg" alt="">
+                    <img src="assets/community-01.jpg" alt="Community members playing pickleball">
+                    <img src="assets/community-02.jpg" alt="Players connecting at Pickleball Hub">
+                    <img src="assets/community-03.jpg" alt="Community event at Pickleball Hub">
+                    <img src="assets/community-04.jpg" alt="Pickleball Hub community gathering">
 
                 </div>
 
@@ -849,23 +849,30 @@
                 <form class="contact-form" onsubmit="handleFormSubmit(event)">
 
                     <div class="form-group">
+                        <label for="contact-name" class="sr-only">Your Name</label>
                         <input
+                            id="contact-name"
                             type="text"
                             placeholder="Your Name"
+                            autocomplete="name"
                             required
                         >
                     </div>
 
                     <div class="form-group">
+                        <label for="contact-email" class="sr-only">Your Email</label>
                         <input
+                            id="contact-email"
                             type="email"
                             placeholder="Your Email"
+                            autocomplete="email"
                             required
                         >
                     </div>
 
                     <div class="form-group">
-                        <select>
+                        <label for="contact-interest" class="sr-only">I'm interested in</label>
+                        <select id="contact-interest">
                             <option value="" disabled selected>I'm interested in...</option>
                             <option>Membership</option>
                             <option>Court Booking</option>
@@ -876,7 +883,9 @@
                     </div>
 
                     <div class="form-group">
+                        <label for="contact-message" class="sr-only">Your Message</label>
                         <textarea
+                            id="contact-message"
                             placeholder="Your Message"
                             rows="4"
                             required
